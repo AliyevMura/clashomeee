@@ -1,0 +1,29 @@
+﻿@model TeamMember
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" placeholder="TeamMember">
+                    <span class="text text-danger" asp-validation-for="Name"></span>
+
+
+                    <label asp-for="Profession"></label>
+                    <input asp-for="Profession" class="form-control" placeholder="TeamMember Profession">
+                    <span class="text text-danger" asp-validation-for="Profession"></span>
+
+                    <label asp-for="Image"></label>
+                    <input asp-for="Image" class="form-control" placeholder="TeamMember Image">
+                    <span class="text text-danger" asp-validation-for="Image"></span>
+                </div>
+                <button type="submit" class="btn btn-primary me-2 text-light">Edit</button>
+                <button class="btn btn-light" asp-action="Index">Go Back</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

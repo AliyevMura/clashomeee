@@ -1,0 +1,28 @@
+﻿@model Service;
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" placeholder="Service">
+                    <span class="text text-danger" asp-validation-for="Name"></span>
+                    <label asp-for="Price"></label>
+                    <input asp-for="Price" class="form-control" placeholder="Service Price">
+                    <span class="text text-danger" asp-validation-for="Price"></span>
+                    <label asp-for="Description"></label>
+                    <input asp-for="Description" class="form-control" placeholder="Service description">
+                    <span class="text text-danger" asp-validation-for="Description"></span>
+                    <label asp-for="CategoryId"></label>
+                    <input asp-for="CategoryId" class="form-control" placeholder="Service CategoryId">
+                    <span class="text text-danger" asp-validation-for="CategoryId"></span>
+
+                </div>
+                <button type="submit" class="btn btn-primary me-2 text-light">Edit</button>
+                <button class="btn btn-light" asp-action="Index">Go back</button>
+            </form>
+        </div>
+    </div>
+</div>
